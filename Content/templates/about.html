@@ -1,0 +1,153 @@
+{% load static %}
+<section id="about">
+  <div class="container">
+    <!-- section title -->
+    <h2 class="section-title wow fadeInUp">{{about.0.headline}}</h2>
+
+    <div class="spacer" data-height="60"></div>
+
+    <div class="row">
+      <div class="col-md-9 triangle-left-md triangle-top-sm">
+        <div class="rounded bg-white shadow-dark padding-30">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- skill item -->
+              <div class="skill-item">
+                <div class="skill-info clearfix">
+                  <h4 class="float-left mb-3 mt-0">{{skill.0.skill}}</h4>
+                  <span class="float-right">{{skill.0.rate}}</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar data-background"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="{{skill.0.rate}}"
+                    data-color="#53f0b5"
+                  ></div>
+                </div>
+                <div class="spacer" data-height="20"></div>
+              </div>
+
+              <!-- skill item -->
+              <div class="skill-item">
+                <div class="skill-info clearfix">
+                  <h4 class="float-left mb-3 mt-0">{{skill.1.skill}}</h4>
+                  <span class="float-right">{{skill.1.rate}}</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar data-background"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="{{skill.1.rate}}"
+                    data-color="#181e79db"
+                  ></div>
+                </div>
+                <div class="spacer" data-height="20"></div>
+              </div>
+
+              <!-- skill item -->
+              <div class="skill-item">
+                <div class="skill-info clearfix">
+                  <h4 class="float-left mb-3 mt-0">{{skill.2.skill}}</h4>
+                  <span class="float-right">{{skill.2.rate}}</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar data-background"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="{{skill.2.rate}}"
+                    data-color="#ece937"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+              <!-- about text -->
+              <p>{{about.0.description}}</p>
+              <div class="mt-3">
+                <a href="#" class="btn btn-default d-block"
+                  >{{about.0.button}}</a
+                >
+              </div>
+              <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-5 mt-md-0">
+        <div class="text-center text-md-left heightC">
+          <!-- avatar image -->
+          <img src="{{about.0.image.url}}" alt="Naim" class="profile" />
+        </div>
+        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+      </div>
+    </div>
+    <!-- row end -->
+
+    <div class="spacer" data-height="70"></div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!-- fact item -->
+        <div class="fact-item">
+          <span class="icon icon-fire"></span>
+          <div class="details">
+            <h3 class="mb-0 mt-0 number">
+              <em class="count">{{counter.0.value}}</em>
+            </h3>
+            <p class="mb-0">{{counter.0.title}}</p>
+          </div>
+        </div>
+        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <!-- fact item -->
+        <div class="fact-item">
+          <span class="icon icon-cup"></span>
+          <div class="details">
+            <h3 class="mb-0 mt-0 number">
+              <em class="count">{{counter.1.value}}</em>
+            </h3>
+            <p class="mb-0">{{counter.1.title}}</p>
+          </div>
+        </div>
+        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <!-- fact item -->
+        <div class="fact-item">
+          <span class="icon icon-people"></span>
+          <div class="details">
+            <h3 class="mb-0 mt-0 number">
+              <em class="count">{{counter.2.value}}</em>
+            </h3>
+            <p class="mb-0">{{counter.2.title}}</p>
+          </div>
+        </div>
+        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <!-- fact item -->
+        <div class="fact-item">
+          <span class="icon icon-badge"></span>
+          <div class="details">
+            <h3 class="mb-0 mt-0 number">
+              <em class="count">{{counter.3.value}}</em>
+            </h3>
+            <p class="mb-0">{{counter.3.title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+{% load static %}
+<section id="services">
+  <div class="container">
+    <!-- section title -->
+    <h2 class="section-title wow fadeInUp">{{services.0.title}}</h2>
+
+    <div class="spacer" data-height="60"></div>
+
+    <div class="row">
+      {% for itm in item %}
+      <div class="col-md-4">
+        <!-- service box -->
+        <div
+          class="service-box rounded data-background padding-30 text-center text-light shadow-blue"
+          data-color="{{itm.color}}"
+        >
+          <img src="{{itm.image.url}}" alt="UI/UX design" />
+          <h3 class="mb-3 mt-0">{{itm.title}}</h3>
+          <p class="mb-0">{{itm.description}}</p>
+        </div>
+        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="mt-5 text-center">
+      <p class="mb-0">
+        {{services.0.subtitle}} <a href="#contact">Click here</a> to contact me!
+        👋
+      </p>
+    </div>
+  </div>
+</section>

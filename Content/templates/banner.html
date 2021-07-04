@@ -1,0 +1,248 @@
+{% load static %}
+<main class="content-3">
+  <!-- section home -->
+  <section id="home" class="home d-flex align-items-center">
+    <div class="container">
+      <!-- intro -->
+      <div class="intro">
+        <!-- avatar image -->
+        <!-- <img src="images/profile-1.png" alt="Bolby" class="mb-4" /> -->
+
+        <!-- info -->
+        <h1 class="mb-2 mt-0">{{ban.0.headline}}</h1>
+        <span
+          >I'm a
+          <span class="text-rotating"
+            >{{ban.0.title1}}, {{ban.0.title2}}, {{ban.0.title3}}</span
+          ></span
+        >
+
+        <!-- social icons -->
+        <ul class="social-icons light list-inline mb-0 mt-4">
+          {% for sml in sm %}
+          <li class="list-inline-item">
+            <a href="{{sml.link}}"><i class="fab fa-{{sml.name}}"></i></a>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!-- buttons -->
+        <div class="mt-4">
+          <a href="{{hire.0.link}}" class="btn btn-default">{{hire.0.name}}</a>
+        </div>
+      </div>
+
+      <!-- scroll down mouse wheel -->
+      <div class="scroll-down">
+        <a href="#about" class="mouse-wrapper">
+          <span>Scroll Down</span>
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+        </a>
+      </div>
+
+      <!-- parallax layers -->
+      <div class="parallax" data-relative-input="true">
+        <svg
+          width="27"
+          height="29"
+          data-depth="0.3"
+          class="layer p1"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FFD15C"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="26"
+          height="26"
+          data-depth="0.2"
+          class="layer p2"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FF4C60"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="30"
+          height="25"
+          data-depth="0.3"
+          class="layer p3"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#44D7B6"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="15"
+          height="23"
+          data-depth="0.6"
+          class="layer p4"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(30 9.86603 10.13397)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FFD15C"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="15"
+          height="23"
+          data-depth="0.2"
+          class="layer p5"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(30 9.86603 10.13397)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#6C6CE5"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="49"
+          height="17"
+          data-depth="0.5"
+          class="layer p6"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FF4C60"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="26"
+          height="26"
+          data-depth="0.4"
+          class="layer p7"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FFD15C"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="19"
+          height="21"
+          data-depth="0.3"
+          class="layer p8"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#6C6CE5"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="30"
+          height="25"
+          data-depth="0.3"
+          data-depth-y="-1.30"
+          class="layer p9"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#6C6CE5"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="47"
+          height="29"
+          data-depth="0.2"
+          class="layer p10"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#44D7B6"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <svg
+          width="33"
+          height="20"
+          data-depth="0.5"
+          class="layer p11"
+          xmlns="{% static 'http://www.w3.org/2000/svg' %}"
+        >
+          <rect
+            transform="rotate(-40 6.25252 10.12626)"
+            x="7"
+            width="3"
+            height="25"
+            rx="1.5"
+            fill="#FFD15C"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>

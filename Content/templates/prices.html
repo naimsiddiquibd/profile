@@ -1,0 +1,34 @@
+{% load static %}
+<!-- section prices -->
+<section id="prices">
+  <div class="container">
+    <!-- section title -->
+    <h2 class="section-title wow fadeIn">{{price.0.title}}</h2>
+
+    <div class="spacer" data-height="60"></div>
+    <div class="row">
+      {% for tbl in table %}
+      <div class="col-md-4 pr-md-0 mt-md-4 mt-0">
+        <!-- price item -->
+        <div class="price-item bg-white rounded shadow-dark text-center">
+          <img src="{{tbl.icon.url}}" alt="Regular" />
+          <h2 class="plan">{{tbl.title}}</h2>
+          <p>{{tbl.offer1}}</p>
+          <p>{{tbl.offer2}}</p>
+          <p>{{tbl.offer3}}</p>
+          <p>{{tbl.offer4}}</p>
+          <p>{{tbl.offer5}}</p>
+          <h3 class="price">{{tbl.price}}</h3>
+          <a
+            href="#"
+            class="btn btn-default"
+            data-toggle="modal"
+            data-target="{{tbl.link}}"
+            >{{tbl.button}}</a
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

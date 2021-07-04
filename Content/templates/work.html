@@ -1,0 +1,45 @@
+{% load static %}
+<!-- section works -->
+<section id="works">
+  <div class="container">
+    <!-- section title -->
+    <h2 class="section-title wow fadeInUp">{{port.0.title}}</h2>
+
+    <div class="spacer" data-height="60"></div>
+
+
+    <!-- portolio wrapper -->
+    <div class="row portfolio-wrapper">
+
+      <!-- portfolio item -->
+      {% for itm in itemb %}
+      <div class="col-md-4 col-sm-6 grid-item creative design">
+        <a href="#small-dialog" class="work-content">
+          <div class="portfolio-item rounded shadow-dark">
+            <div class="details">
+              <span class="term">{{itm.category}}</span>
+              <h4 class="title">{{itm.title}}</h4>
+              <span class="more-button"><i class="icon-options"></i></span>
+            </div>
+            <div class="thumb">
+              <img
+                src="{{itm.feature.url}}"
+                alt="Portfolio-title"
+              />
+              <div class="mask"></div>
+            </div>
+          </div>
+        </a>
+        <div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
+          <img src="{{itm.image.url}}" alt="Title" />
+          <h2>{{itm.title}}</h2>
+          <p>
+            {{itm.description}}
+          </p>
+          <a href="{{itm.link}}" class="btn btn-default">{{itm.button}}</a>
+        </div>
+      </div>
+      {% endfor %}
+
+  </div>
+</section>

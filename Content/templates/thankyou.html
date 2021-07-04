@@ -1,0 +1,31 @@
+{% load static %}
+<!-- Header -->
+{% block Header %} {% include 'header.html' %} {% endblock Header %}
+<!-- Header End -->
+<div class="jumbotron text-center" style="background-color: #5f1be7">
+  <h1 class="display-3" style="padding-top: 50px">Thank You!</h1>
+  <p class="lead">
+    <strong>I received your mail successfully.</strong> You will be replied
+    shortly from my official mail naimsiddiquibd@gmail.com
+  </p>
+  <hr />
+  <p>Having trouble? <a href="">Contact me</a></p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="home" role="button"
+      >Continue to homepage</a
+    >
+  </p>
+</div>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      Hello <strong>{{sender_name}}</strong>, Here is the mail that you just
+      have sent me.
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ subject }}</h5>
+      <p class="card-text">{{ message }}</p>
+    </div>
+  </div>
+</div>
+<br />
